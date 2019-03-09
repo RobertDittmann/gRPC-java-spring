@@ -1,6 +1,9 @@
 package com.rdittmann.grpc.math;
 
 import com.rdittmann.grpc.channel.Channel;
+import com.rdittmann.grpc.math.Result;
+import com.rdittmann.grpc.math.SomeMathOperationServiceGrpc;
+import com.rdittmann.grpc.math.Values;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -27,9 +30,7 @@ public class SomeMathOperationClient {
 
     public Integer multiply(final List<Integer> values) {
         final Values ints = Values.newBuilder().addAllValue(values).build();
-
         final Result result = mathServiceBlockingStub.multiply(ints);
-
         return result.getResult();
     }
 

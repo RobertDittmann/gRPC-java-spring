@@ -1,5 +1,8 @@
 package com.rdittmann.grpc.hello;
 
+import com.rdittmann.grpc.hello.Answer;
+import com.rdittmann.grpc.hello.Person;
+import com.rdittmann.grpc.hello.SayHelloServiceGrpc;
 import io.grpc.stub.StreamObserver;
 import org.lognet.springboot.grpc.GRpcService;
 

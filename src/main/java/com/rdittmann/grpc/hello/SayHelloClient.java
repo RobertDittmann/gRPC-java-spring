@@ -1,6 +1,8 @@
 package com.rdittmann.grpc.hello;
 
 import com.rdittmann.grpc.channel.Channel;
+import com.rdittmann.grpc.hello.Person;
+import com.rdittmann.grpc.hello.SayHelloServiceGrpc;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;

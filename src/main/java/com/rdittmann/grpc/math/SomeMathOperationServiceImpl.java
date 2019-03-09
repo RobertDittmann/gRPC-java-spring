@@ -1,5 +1,8 @@
 package com.rdittmann.grpc.math;
 
+import com.rdittmann.grpc.math.Result;
+import com.rdittmann.grpc.math.SomeMathOperationServiceGrpc;
+import com.rdittmann.grpc.math.Values;
 import io.grpc.stub.StreamObserver;
 import org.lognet.springboot.grpc.GRpcService;
 
