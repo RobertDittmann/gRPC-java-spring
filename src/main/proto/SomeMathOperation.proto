@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+package com.rdittmann.grpc.math;
+
+message Values {
+    repeated int32 value = 1;
+}
+
+message Result {
+    int32 result = 1;
+}
+
+service SomeMathOperationService {
+    rpc sum (Values) returns (Result);
+    rpc multiply (Values) returns (Result);
+}

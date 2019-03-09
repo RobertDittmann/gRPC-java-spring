@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+package com.rdittmann.grpc.hello;
+
+message Person {
+    string name = 1;
+    string surname = 2;
+}
+
+message Answer {
+    string message = 1;
+}
+
+service SayHelloService {
+    rpc hi (Person) returns (Answer);
+}
